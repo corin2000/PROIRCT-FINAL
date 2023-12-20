@@ -9,23 +9,20 @@ import { Navbar } from './components/Navbar';
 
 
 
+
 const App = () => {
 	return (
 		<>
-		<Navbar/>
-		
-		
-		
+			<Navbar color="white" textColor="#4F6F52" />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/admin" element={<Admin />} />
 				<Route path="/cart" element={<Cart />} />
-				<Route path="/details" element={<Details />} />
+				<Route path="/productName" element={<Details />} />
 			</Routes>
 		</>
 	);
 };
 
-
-
 export default App
+
